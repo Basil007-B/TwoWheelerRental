@@ -39,23 +39,4 @@ function calculateTotalCost($start_date, $end_date, $price_per_day) {
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Book Vehicle</title>
-</head>
-<body>
-    <h2>Book Vehicle</h2>
-    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-        <input type="hidden" name="vehicle_id" value="<?php echo $_GET['vehicle_id']; ?>">
 
-        <label>Start Date:</label><br>
-        <input type="date" name="start_date" required><br><br>
-
-        <label>End Date:</label><br>
-        <input type="date" name="end_date" required><br><br>
-
-        <input type="submit" value="Book">
-    </form>
-</body>
-</html>
